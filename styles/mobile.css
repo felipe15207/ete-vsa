@@ -1,0 +1,106 @@
+/* CABEÇALHO */
+
+.info-header {
+    justify-content: space-evenly;
+}
+
+.contato-header p {
+    font-size: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.lista-menu {
+    display: none;
+}
+
+.lista-menu.ativado {
+    display: block;
+    width: 320px;
+    height: 100vh;
+    flex-direction: column;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFF;
+}
+
+.lista-menu li {
+    display: block;
+}
+
+.lista-menu > li:first-child {
+    margin-top: 140px;
+}
+
+.lista-menu > li {
+    margin-top: 25px;
+}
+
+.sub-lista {
+    position: relative;
+    border: none;
+}
+
+#btn-menu {
+    z-index: 2000;
+    width: 50px;
+    height: 35px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#btn-menu .linha {
+    width: 40px;
+    height:5px;
+    border-radius: 10px;
+    background-color: #818181;
+    display: block;
+    position: relative;
+    transform-origin: center;
+    transition: 0.3s;
+}
+
+
+#btn-menu.ativado .linha:nth-child(1) {
+    transform: translateY(15px) rotate(-45deg);
+}
+
+#btn-menu.ativado .linha:nth-child(2) {
+    width: 0x;
+    height: 0px;
+    background-color: aqua;
+}
+
+#btn-menu.ativado .linha:nth-child(3) {
+    transform: translateY(-14px) rotate(45deg);
+}
+
+/* CABEÇALHO */
+
+
+/* RODAPÉ */
+
+footer {
+    grid-template-areas: 
+    "contatos"
+    "medias";
+}
+
+/* RODAPÉ */
